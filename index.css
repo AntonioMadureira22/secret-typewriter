@@ -1,0 +1,47 @@
+*{
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper h1{
+    font-family: consolas;
+    text-transform: capitalize;
+    border-right: 3px solid white;
+    animation: typist 75s steps(77) infinite, carrot 0.7s infinite, step-end;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.psw{
+    display: flex;
+    align-items: centerl;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    bottom: 0;
+    top: 0;
+
+}
+
+@keyframes carrot{
+    0%, 100%{border-color: transparent;}
+    50%{border-color: white;}
+}
+
+@keyframes typist{
+    0%{ width: 0ch }
+    30%{ width:77ch; }
+    80%{ width:77ch; }
+    90%{ width:0ch; }
+    100% { width:0ch; }
+
+}
+
